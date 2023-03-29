@@ -1,0 +1,262 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interns</title>
+    <link rel="stylesheet" href="../static/style.css">
+
+
+    <style>
+        .btn {
+        border: none;
+        outline: none;
+        padding: 21px;
+        background: rgb(77, 88, 202);
+        border-radius: 8px;
+        cursor: pointer;
+        color: rgb(240, 249, 235);
+        font-size: 20px;
+        margin-left: 40px;
+        margin-top: 0px;
+        float: left;
+      }
+
+      .input2 {
+        flex: 1;
+        border-color: rgb(246, 133, 42);
+        outline: none;
+        background: transparent;
+        padding: 20px;
+        font-weight: 20px;
+        font-size: large;
+      
+      }
+      .a{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 100px;
+        background-color: #ddd;
+        width: 50%;
+      }
+    </style>
+</head>
+<body>
+
+    <h1>Internships Based On Search Results</h1>
+    <div class="a">
+        <form action="/mail" method="post">
+            <input type="text" name="email" class="input2">
+            <input type="submit" value="submit" class="btn">
+        </form>
+    </div>
+    
+    {% for intern in res %}
+    <div class="container">
+        
+            <h2>{{ intern['title'] }}</h2>
+            <P> 🏢{{intern['company']}}</P>
+            <P> 🚩 {{intern['location']}}</P>
+            <P> ₹ {{intern['stipend']}}</P>
+            
+           <a href="{{intern['link']}}"><button class="button-34" role="button">APPLY</button></a>
+        
+    </div>
+    {% endfor %}
+
+
+    <script src="https://kit.fontawesome.com/ef94d9cac3.js" crossorigin="anonymous"></script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interns</title>
+    <link rel="stylesheet" href="../static/style.css">
+
+
+    <style>
+        .btn {
+        border: none;
+        outline: none;
+        padding: 21px;
+        background: rgb(108, 190, 234);
+        border-radius: 6px;
+        cursor: pointer;
+        color: rgb(240, 249, 235);
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 0px;
+        float: left;
+      }
+
+      .input2 {
+        flex: 1;
+        outline: none;
+        background: transparent;
+        padding: 20px;
+        font-weight: 20px;
+        font-size: large;
+        float: left;
+        border-radius: 6px;
+        border-left: #000 ;
+        border-top: #4d4d8a;
+    }
+      .a{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 70px;
+        background:linear-gradient(100deg,rgb(243, 209, 240),rgb(233, 233, 242));
+        width: 50%;
+        border-radius: 8px;
+      }
+
+
+
+body {
+    background:linear-gradient(60deg,rgb(249, 247, 247),rgb(185, 225, 231));
+}
+
+.box {
+    width: 800px;
+    height: 280px;
+    background-color: #76abcb;
+    color: #fff;
+    /* text-align: center; */
+    font-size: 24px;
+    padding-top: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+.box:hover {
+    background-color: gray;
+    box-shadow: 0px 0px 10px 2px #666;
+    cursor: pointer;
+}
+
+P {
+    margin-left: 60px;
+    margin-top: 28px;
+    margin-bottom: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
+}
+
+h2 {
+    margin-left: 40px;
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  rgb(57, 53, 53);
+    padding-bottom: 10px;
+}
+
+h1{
+    margin-left: 35px;
+    text-align: center;
+    color: rgb(56, 34, 56);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* CSS */
+.button-34 {
+    background: #4d4d8a;
+    border-radius: 500px;
+    box-shadow: #656569 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+        NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+        EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+        "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+
+    margin-left: 80%;
+}
+
+
+
+/* HTML */
+
+.container {
+    height: 250px;
+    width: 800px;
+    background:linear-gradient(120deg,rgb(175, 210, 223),rgb(246, 154, 218));
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    box-shadow: 0 6px 30px 5px rgba(168, 61, 169, 0.37);
+    padding-bottom: 50px;
+    padding-top: 25px;
+    margin: 50px auto;
+}
+
+.text {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 1px 1px #000;
+}
+
+h3{
+  margin: 24px;
+  font-family: 'Courier New', Courier, monospace;
+}
+    </style>
+</head>
+<body>
+
+    <h1>Internships Based On Search Results</h1>
+    
+    <div class="a">
+      <h3>For Email Updates !!! </h3> 
+        <form action="/mail" method="post">
+            <input type="text" name="email" class="input2" placeholder="Email">
+            <input type="submit" value="submit" class="btn">
+        </form>
+    </div>
+    <!-- <h1>Internships Based On Search Results</h1> -->
+    {% for intern in res %}
+    <div class="container">
+        
+            <h2>{{ intern['title'] }}</h2>
+            <P> 🏢{{intern['company']}}</P>
+            <P> 🚩 {{intern['location']}}</P>
+            <P> ₹ {{intern['stipend']}}</P>
+            
+           <a href="{{intern['link']}}"><button class="button-34" role="button">APPLY</button></a>
+        
+    </div>
+    {% endfor %}
+
+
+    <script src="https://kit.fontawesome.com/ef94d9cac3.js" crossorigin="anonymous"></script>
+</body>
+</html>

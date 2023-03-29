@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+        background-image: url(/static/bg.jpg);
+        padding: 10px;
+        margin: 0px;
+      }
+
+      .container h2 {
+        margin-top: 10px;
+        margin-bottom: 40px;
+      }
+
+      .div1 {
+        width: 100%;
+        max-width: 1000px;
+        background: linear-gradient(
+          120deg,
+          rgba(241, 180, 180, 0.959),
+          rgb(181, 226, 223)
+        );
+        margin: 140px auto 70px;
+        padding: 50px;
+        border-radius: 15px;
+        height: 40%;
+      }
+
+      .div2 {
+        width: 32%;
+        float: left;
+        align-items: center;
+      }
+
+      .input1 {
+        flex: 1;
+        border-color: rgb(16, 14, 14);
+        outline: none;
+        background: transparent;
+        padding: 20px;
+        font-weight: 20px;
+        font-size: large;
+        /* margin-right: 50px; */
+      }
+
+      #input2 {
+        flex: 1;
+        border-color: rgb(246, 133, 42);
+        outline: none;
+        background: transparent;
+        padding: 20px;
+        font-weight: 20px;
+        font-size: large;
+      
+      }
+
+      .btn {
+        border: none;
+        outline: none;
+        padding: 21px;
+        background: rgb(77, 88, 202);
+        border-radius: 8px;
+        cursor: pointer;
+        color: rgb(240, 249, 235);
+        font-size: 20px;
+        margin-left: 40px;
+        margin-top: 0px;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="container">
+        <div class="div1">
+          <form action="/intern" method="post">
+            <h2><label for="category">Choose a category:</label></h2>
+  
+            <div class="div2">
+              <select name="category" id="category" class="input1">
+                <option value="web-development">Web Development</option>
+                <option value="front-end-development">
+                  Front End Development
+                </option>
+                <option value="back-end-development">Backend Development</option>
+                <option value="android-app-development">
+                  Android  Development
+                </option>
+                <option value="data-science">Data Science</option>
+                <option value="machine-learning">Machine Learning</option>
+                <option value="artificial-intelligence-(ai)">
+                  Artificial Intelligence
+                </option>
+                <option value="blockchain-development">Blockchain</option>
+                <option value="cyber-security">Cyber Security</option>
+                <option value="data-entry">Data Entry</option>
+                <option value="angular.js-development">Angular Js</option>
+                <option value="big-data">Big Data</option>
+                <option value="flutter-development">Flutter Development</option>
+              </select>
+            </div>
+  
+            <div class="div2">
+              <input type="text" name="loc" id="input2"  placeholder="location"/>
+            </div>
+  
+            <div class="div2">
+              <input type="submit" value="Submit" class="btn" />
+            </div>
+
+            
+          </form>
+        </div>
+            <center><h4 style="color:purple">For remote internships put 'online' in location</h4></center>
+      </div>
+
+  </body>
+</html>
