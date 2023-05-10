@@ -1,33 +1,52 @@
 
-# REAdme under construction !!!!!!
+# FINDER DECK
 
-A brief description of what this project does and who it's for
-
-
-## Demo
-
-Insert gif or link to demo
+Finder Desk is a python based web application where user can find Internships related to specific tech stack and it sends email
+updates according to previous searches.This project uses scraping tools to extract live data from different websites.
 
 
+## Project Images
+
+Home page
+
+![Home](https://github.com/harinadh76/Finder-Deck/assets/92932442/1d8ff717-1704-4ae0-bfbc-8db140ff2ffa)
+
+Choose Category
+
+![category](https://github.com/harinadh76/Finder-Deck/assets/92932442/2b7a391c-cff7-4f67-8610-24ff006ae2de)
+
+Internships 
+
+![Internships](https://github.com/harinadh76/Finder-Deck/assets/92932442/526cb929-be27-4948-9daf-212cc1a153ed)
+
+Email Update
+
+![Email](https://github.com/harinadh76/Finder-Deck/assets/92932442/8c27cfdf-93cc-4e29-9ec4-91f6df58714e)
 
 
 
-## Deployment
 
-To deploy this project run
+## Deployment Link
 
-```bash
-  npm run deploy
-```
+[Click Here](https://finder-desk.onrender.com/)
+
+
+
+
 
 
 ## Installation
 
-Install my-project with npm
+Install Finder Desk
 
 ```bash
-  npm install my-project
-  cd my-project
+  git clone https://github.com/harinadh76/Finder-Deck.git
+```
+```bash
+  pip install requirements.txt
+```
+```bash
+  python app.py
 ```
     
 ## License
@@ -35,34 +54,12 @@ Install my-project with npm
 [MIT](https://choosealicense.com/licenses/mit/)
 
 
-## Acknowledgements
+## My Profiles
 
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
-
-
-## Appendix
-
-Any additional information goes here
+- [Github](https://www.github.com/harinadh76)
+- [Instagram](https://www.instagram.com/_hypertext.assassins/)
 
 
-## Authors
-
-- [@Harinadh](https://www.github.com/octokatherine)
-- [Instagram](hypertextasssins)
-
-
-## Badges
-
-Add badges from somewhere like: [shields.io](https://shields.io/)
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
-
-
-[![](https://media.emailonacid.com/wp-content/uploads/2019/03/2019-GifsInEmail.gif)](https://media.emailonacid.com/wp-content/uploads/2019/03/2019-GifsInEmail.gif)
 ## Contributing
 
 Contributions are always welcome!
@@ -70,37 +67,4 @@ Contributions are always welcome!
 See `contributing.md` for ways to get started.
 
 Please adhere to this project's `code of conduct`.
-
-
-## Live Link
-
-[Live Link](https://linktodocumentation)
-
-
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
-
-
-## FAQ
-
-#### Question 1
-
-Answer 1
-
-#### Question 2
-
-Answer 2
-
-
-## Features
-
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
 
